@@ -1,0 +1,171 @@
+.top {
+	width: 961px;
+	height: 76px;
+	border-bottom: 3px solid #f07700;
+	border-top: 2px solid #dedede;
+	margin: 0 auto;
+	position: relative;
+}
+
+.top .logo img {
+	float: left;
+}
+
+.top .nav ul {
+	margin-left: 550px;
+}
+
+.top .nav .list li {
+	float: left;
+	height: 22px;
+	line-height: 22px;
+	padding: 0 9px;
+	background: url(../img/nav-bg.gif) no-repeat right center;
+}
+
+.top .nav .list .last {
+	background: none;
+	padding-right: 6px;
+}
+
+.top .nav .list li a {
+	color: #000;
+}
+
+.top p {
+	position: absolute;
+	top: 28px;
+	right: 12px;
+}
+
+.top p a {
+	margin-right: 5px;
+	color: #007AFF;
+}
+
+.content {
+	width: 961px;
+	margin: 0 auto;
+}
+
+.content h3 {
+	color: #404040;
+	text-indent: 19px;
+	margin-top: 29px;
+	font-size: 16px;
+	line-height: 36px;
+	height: 36px;
+	width: 960px;
+	border: 1px solid #e9e9e9;
+	display: inline-block;
+	background: url(../img/contanier-bg.gif) repeat-x;
+}
+
+.content h3 span {
+	font-size: 12px;
+	margin-left: 21px;
+	position: relative;
+}
+
+.content {
+	margin: 0 auto;
+}
+
+.content #jsForm {
+	text-align: left;
+}
+
+.content #jsForm label {
+	font-size: 14px;
+	color: #666;
+	width: 120px;
+	margin-left: 250px;
+}
+
+.content ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+.content .fn-vhid {
+	visibility: hidden;
+}
+
+.content .fn-tinput {
+	width: 300px;
+	height: 30px;
+	line-height: 30px\9;
+	border: #ddd solid 1px;
+	background-color: transparent;
+	padding: 0 6px;
+	text-align: left;
+}
+
+.content .fn-tinput:focus,
+focus {
+	border-color: #c00;
+}
+
+.content .bl-form label {
+	float: left;
+	width: 100px;
+	text-align: right;
+	padding-top: 6px;
+}
+
+.content .bl-form li {
+	margin-top: 30px;
+	overflow: hidden;
+}
+
+.content em,
+strong {
+	color: #C00;
+}
+
+.content span.error {
+	color: #C00;
+	padding: 0 6px;
+}
+
+.content #jsForm .fn-btn {
+	width: 180px;
+	height: 40px;
+	background: #0094FF;
+	margin-left: 380px;
+	color: #fff;
+	font-size: 16px;
+	letter-spacing: 5px;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.content .valida{
+	border: 1px solid #ccc;
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	margin-left: 420px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.footer {
+	height: 150px;
+}
+
+.footer p {
+	margin-top: 20px;
+	text-align: center;
+	color: #666;
+}
+
+.footer p a {
+	color: #666;
+}
+
+.footer .foot a {
+	margin-right: 18px;
+}

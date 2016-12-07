@@ -1,0 +1,130 @@
+#hd {
+	width: 100%;
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #f2f2f2;
+	height: 34px;
+	line-height: 34px;
+	position: relative;
+	z-index: 10010;
+}
+a{
+	color: #666;
+	font-size: 12px;
+}
+
+.top{
+	width: 1200px;
+	margin: 0 auto;
+	height: 34px;
+	position: relative;
+}
+
+.top p {
+	float: left;
+	width: 250px;
+}
+.top p .user{
+	color: red;
+}
+.top .nav ul {
+	margin-left: 628px;
+}
+
+.top .nav ul li {
+	float: left;
+	padding: 0 10px;
+	background: url(../img/nav-bg.gif) no-repeat right center;
+}
+.top .tu{
+	position: absolute;
+	top: 34px;
+	right: 175px;
+	display: none;
+}
+.top .mydang{
+	position: absolute;
+	top: 34px;
+	right: 255px;
+	display: none;
+}
+.top .mydang ul li:hover{
+	background: #ccc;
+}
+.top .nav .last {
+	background: none;
+}
+.content{
+	width: 1200px;
+	height: 104px;
+	overflow: hidden;
+	margin: 0 auto;
+	border-bottom: 3px solid #FF0000;
+}
+.content .logo{
+	float: left;
+	margin-top: 20px;
+}
+.content .nav{
+	float: left;
+	margin-left: 60px;
+}
+.content .nav ul li{
+	float: left;
+	width: 206px;
+	margin: 0 20px;
+	height: 36px;
+	background: #ccc;
+	line-height: 36px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+	margin-top: 30px;
+}
+.content .nav ul li:hover{
+	background: red;
+	color: #fff;
+}
+.address{
+	width: 1200px;
+	height: 54px;
+	overflow: hidden;
+	background: #CBD5DD;
+	margin: 0 auto;
+}
+.address p{
+	height: 54px;
+	line-height: 54px;
+	color: #666;
+}
+.protect{
+	width: 1200px;
+	margin: 0 auto;
+}
+.protect .list-item{
+	overflow: hidden;
+	background: #ccc;
+	height: 50px;
+}
+.protect .list-item li{
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	margin: 0 50px;
+	color: #666;
+}
+.protect #goods li{
+	width: 1200px;
+	height: 30px;
+	color: red;
+	line-height: 30px;
+	font-size: 16px;
+	margin-right: 50px;
+}
+.protect #goods td{
+	width: 162px;
+	height: 30px;
+	color: red;
+	text-align: center;
+}

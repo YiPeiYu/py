@@ -1,0 +1,190 @@
+#hd {
+	width: 100%;
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #f2f2f2;
+	height: 34px;
+	line-height: 34px;
+	position: relative;
+	z-index: 10010;
+}
+a{
+	color: #666;
+	font-size: 12px;
+}
+
+.top,.head,.nav2{
+	width: 1200px;
+	margin: 0 auto;
+	height: 34px;
+}
+
+.top p {
+	float: left;
+	width: 200px;
+}
+.top p .user{
+	color: red;
+}
+.top .nav{
+	position: relative;
+}
+.top .nav .nav1 ul {
+	margin-left: 628px;
+}
+
+.top .nav .nav1 ul li {
+	float: left;
+	padding: 0 10px;
+	background: url(../img/nav-bg.gif) no-repeat right center;
+}
+.top .nav .tu{
+	position: absolute;
+	top: 34px;
+	right: 175px;
+	display: none;
+}
+.top .nav .mydang{
+	position: absolute;
+	top: 34px;
+	right: 255px;
+	display: none;
+}
+.top .nav .mydang ul li:hover{
+	background: #ccc;
+}
+.top .nav .nav1 .last {
+	background: none;
+}
+
+
+.head {
+	overflow: hidden;
+	height: 109px;
+	position: relative;
+}
+
+.head .logo {
+	float: left;
+}
+
+.head .seach {
+	float: left;
+	width: 600px;
+	height: 38px;
+	margin-top: 32px;
+	position: relative;
+}
+.head .seach .list-group-item-info{
+	position: absolute;
+	top: 39px;
+	left: 410px;
+	display: none;
+}
+.head .seach .list-group-item-info ul li{
+	width: 104px;
+	height: 20px;
+	text-align: center;
+}
+.head .seach .sch {
+	width: 408px;
+	height: 30px;
+}
+
+.head .seach .select {
+	position: absolute;
+	top: 0;
+	right: 86px;
+	width: 102px;
+	height: 34px;
+	background: #fafafa;
+	border: 1px solid #ccc;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 34px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.head .seach .btn {
+	position: absolute;
+	top: 0;
+	right: 5px;
+	width: 80px;
+	height: 36px;
+	background: #ff2832;
+	border: none;
+	font-size: 18px;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+}
+.head .shop_car{
+	position: absolute;
+	top: 0;
+	left: 700px;
+}
+.head .shop_car p span a{
+	width: 70px;
+	height: 30px;
+	background: #ccc;
+	color: #fff;
+	line-height: 30px;
+	display: inline-block;
+	margin-top: 5px;
+	text-align: center;
+}
+.head .shop_car p span a:hover{
+	background: red;
+}
+#lt {
+	width: 100%;
+	background: #ff2832;
+	height: 37px;
+}
+.nav2 ul li {
+	float: left;
+	line-height: 37px;
+	padding: 0 15px;
+}
+
+.nav2 ul li a {
+	font-size: 14px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.nav2 ul li.first {
+	width: 158px;
+	text-align: center;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.nav3{
+	width: 200px;
+	position: absolute;
+	top: 182px;
+	left: 75px;
+	display: none;
+	background: #ccc;
+}
+.nav3 ul li {
+	height: 30px;
+	width: 188px;
+	line-height: 30px;
+	text-align: center;
+}
+.nav4{
+	width: 600px;
+	position: absolute;
+	top: 182px;
+	left: 275px;
+	background: #ccc;
+	display: none;
+}
+.nav4 ul li {
+	float: left;
+	height: 30px;
+	width: 188px;
+	line-height: 30px;
+	text-align: center;
+}

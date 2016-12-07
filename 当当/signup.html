@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<!-- auto css -->
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/signup.css" />
+
+	<!--js plugin -->
+	<script src="libs/jquery/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/signup.js" ></script>
+	<script src="libs/jquery-validation-1.15.0/jquery.validate.min.js"></script>
+
+	<body>
+		<div class="top">
+			<div class="logo">
+				<a href="#"><img src="img/ddnewhead_logo.gif" /></a>
+			</div>
+			<div class="nav">
+				<ul class="list">
+					<li>
+						<a href="#">购物车</a>
+					</li>
+					<li>
+						<a href="#">我的订单</a>
+					</li>
+					<li>
+						<a href="#">我的当当</a>
+					</li>
+					<li>
+						<a href="#">礼品卡</a>
+					</li>
+					<li>
+						<a href="#">手机当当</a>
+					</li>
+					<li>
+						<a href="#">企业销售</a>
+					</li>
+					<li class="last">
+						<a href="#">帮助</a>
+					</li>
+				</ul>
+			</div>
+			<p>欢迎光临当当网，请
+				<a href="#">登录</a>
+				<a href="signup.html">免费注册</a>
+			</p>
+		</div>
+		<div class="content">
+			<h3>注册新用户 <span>完成手机/邮箱验证注册，可以获得服装礼券哦！</span></h3>
+			<form  action="signin.html" class="bl-form bl-formhor" id="jsForm">
+				<ul>
+					<li class="bl-form-group">
+						<label>邮箱/手机号码：</label>
+						<div class="controls">
+							<input type="text" value="" name="4" class="fn-tinput" placeholder="邮箱或手机" required data-rule-mm="true" data-msg-required="输入邮箱/手机" data-msg-mm="请输入正确格式" />
+						</div>
+					</li>
+					<li class="bl-form-group">
+						<label>登录密码：</label>
+						<div class="controls">
+							<input class="fn-tinput" type="password" name="password" value="" placeholder="登录密码" required id="password" data-rule-remote="php.php" minlength="6" maxlength="20" data-msg-minlength="输入6-20个字符">
+						</div>
+					</li>
+					<li class="bl-form-group">
+						<label>确认密码：</label>
+						<div class="controls">
+							<input class="fn-tinput" type="password" name="confirm_password" value="" placeholder="确认密码" required equalTo="#password">
+						</div>
+					</li>
+					<li class="bl-form-group">
+						<label>验证码：</label>
+						<div class="controls">
+							<input class="fn-tinput" type="text" name="test" value="" placeholder="验证码" required>
+						</div>
+						<p class="valida"></p>
+					</li>
+					<li class="bl-form-group bl-form-btns">
+						<div class="controls">
+							<button class="fn-btn submitBtn" type="submit">立即注册</button>
+						</div>
+					</li>
+				</ul>
+			</form>
+			
+		</div>
+		<div class="footer">
+			<p>Copyright (C) 当当网 2004-2012, All Rights Reserved&nbsp;|&nbsp;
+				<a href="#">京ICP证041189号</a>
+				<a href="#">音像制品经营许可证 京音网8号</a>
+			</p>
+			<p class="foot">
+				<a href="#"><img src="img/validate.gif" /></a>
+				<a href="#"><img src="img/kx.jpg" /></a>
+			</p>
+		</div>
+
+		<script type="text/javascript">
+			$(function() {
+				//jquery.validate
+				$("#jsForm").validate({
+					submitHandler: function() {
+						//验证通过后 的js代码写在这里
+					}
+				})
+
+			})
+
+			//配置错误提示的节点，默认为label，这里配置成 span （errorElement:'span'）
+			$.validator.setDefaults({
+				errorElement: 'span'
+			});
+
+			//配置通用的默认提示语
+			$.extend($.validator.messages, {
+				required: '必填',
+				equalTo: "请再次输入相同的值"
+			});
+
+			//邮箱或手机验证规则  
+			jQuery.validator.addMethod("mm", function(value, element) {
+				var mm = /^[a-z0-9._%-]+@([a-z0-9-]+\.)+[a-z]{2,4}$|^1[3|4|5|7|8]\d{9}$/;
+				return this.optional(element) || (mm.test(value));
+			}, "格式不对");
+		</script>
+
+	</body>
+
+</html>

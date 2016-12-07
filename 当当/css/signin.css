@@ -1,0 +1,157 @@
+body{
+	background: #f5f5f5;
+}
+
+.head{
+	height: 113px;
+	width: 961px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.head a img{
+	margin-top: 24px;
+	float: left;
+}
+
+.head ul{
+	margin-left: 560px;
+}
+
+.head ul li{
+	margin-top: 20px;
+	float: left;
+	padding: 0 30px;
+	height: 30px;
+}
+
+.head ul .n1{
+	background: url(../img/登录_03.jpg) no-repeat left center;
+}
+
+.head ul .n2{
+	background: url(../img/登录_05.jpg) no-repeat left center;
+}
+
+.head ul .n3{
+	background: url(../img/登录_07.jpg) no-repeat left center;
+}
+
+.head ul li a{
+	color: #666;
+	line-height: 30px;
+	margin-left: 12px;
+}
+
+.head .warn{
+	line-height: 24px;
+    color: #828282;
+    padding-left: 22px;
+    border: 1px solid #fedbd1;
+    position: absolute;
+    right: 0;
+    top: 79px;
+}
+
+.head .warn .fa{
+	background: red;
+	color: #fff;
+	margin-right: 5px;
+}
+
+.content{
+	width: 961px;
+	height: 419px;
+	background: #fff;
+	margin: 0 auto;
+}
+
+.content .left{
+	width: 468px;
+	padding: 17px 73px 16px 17px;
+	float: left;
+}
+
+.content .login{
+	width: 392px;
+	float: right;
+}
+
+.content .login h3{
+	font-size: 12px;
+	padding-top: 24px;
+	color: #666;
+}
+
+.content .login p{
+	border: 1px solid #c7c6c6;
+	display: inline-block;
+	width: 309px;
+	height: 28px;
+	margin-top: 22px;
+	text-align: right;
+	
+}
+
+.content .login .a1{
+	margin-top: 38px;
+	width: 310px;
+	line-height: 20px;
+	height: 20px;
+}
+
+.content .login .a1 span{
+	float: right;
+}
+
+.content .login p input{
+	border: none;
+	text-indent: 5px;
+	width: 288px;
+	height: 26px;
+	line-height: 28px;
+}
+
+.content .login p i{
+	margin-right: 3px;
+}
+
+.content .login .log{
+	border: none;
+	width: 311px;
+	height: 35px;
+}
+
+.content .login .log input{
+	width: 311px;
+	height: 35px;
+}
+
+.content .login .log2 {
+	border: none;
+	color: #666;
+}
+
+.content .login .log2 input{
+	width: 70px;
+	height: 25px;
+}
+
+
+.footer {
+	height: 120px;
+}
+
+.footer p {
+	margin-top: 40px;
+	text-align: center;
+	color: #666;
+}
+
+.footer p a {
+	color: #666;
+}
+
+.footer .foot a {
+	margin-right: 18px;
+}

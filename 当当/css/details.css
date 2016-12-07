@@ -1,0 +1,234 @@
+.container{
+	width: 1200px;
+	height: 63px;
+	margin: 8px auto;
+	
+}
+.breadcrumb {
+	width: 1200px;
+	margin: 0 auto;
+    color: #646464;
+    font: 12px/40px "simsun";
+    height: 40px;
+    line-height: 40px;
+    padding-bottom: 8px;
+}
+.breadcrumb b{
+	font-size: 16px;
+	font-weight: bold;
+}
+.breadcrumb .gt{
+	padding: 0 5px;
+}
+.container2{
+	width: 1200px;
+	height: 421px;
+	margin: 0 auto;
+	overflow: hidden;
+	
+}
+.container2 .cont-l{
+	width: 350px;
+	float: left;
+}
+.container2 .cont-l #bigImg{
+	height: 350px;
+	width: 350px;
+	float: left;
+}
+.container2 .cont-l .list2{
+	float: left;
+}
+.container2 .cont-l .list2 li{
+	float: left;
+}
+.container2 h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+.container2 h2 {
+	width: 624px;
+    padding-top: 6px;
+    max-height: 96px;
+    _height: expression(this.scrollHeight>96 ? "96px":"auto");
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.container2 .messbox_info .t1 {
+    display: inline-block;
+    padding-right: 25px;
+    margin-top: 8px;
+}
+.container2 .messbox_info .pinglun {
+	margin-top: 8px;
+}
+.container2 .messbox_info .star_box {
+    float: left;
+    width: 70px;
+    height: 12px;
+    margin: 6px 6px 0 0;
+    _display: inline;
+    overflow: hidden;
+}
+.container2 .price_d {
+	height: 66px;
+    background-color: #ebebeb;
+    line-height: 28px;
+    width: 630px;
+    margin-left: 350px;
+}
+.container2 .list-group ul li a{
+	display: inline-block;
+	margin-left: 8px;
+	text-align: center;
+	margin-top: 10px;
+}
+.container2 .list-group ul li span{
+	display: inline-block;
+	width: 144px;
+	height: 14px;
+	border: 1px solid #ccc;
+	margin: 0 10px;
+}
+.container2 .goods{
+	margin-top: 20px;
+}
+.container2 .goods a{
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+	color: #fff;
+	line-height: 30px;
+	border-radius: 10px;
+	font-weight: bold;
+	text-align: center;
+	margin-right: 20px;
+	background: red;
+	cursor: pointer;
+	margin-left: 20px;
+}
+.container2 .goods input{
+	width:20px;
+	height:20px
+}
+.container3{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.container3 .cont3-left{
+	width: 220px;
+	height: 1000px;
+	float: left;
+}
+.container3 .cont3-left h3{
+	height: 36px;
+	line-height: 36px;
+	color: 666;
+	font-size: 16px;
+}
+.container3 .cont3-left #list{
+	overflow: hidden;
+}
+.container3 .cont3-left #list li{
+	float: left;
+	height: 30px;
+	width: 109px;
+	text-align: center;
+}
+.container3 .cont3-left #list li a{
+	display: inline-block;
+	height: 30px;
+	width: 70px;
+	font-size: 14px;
+}
+.container3 .cont3-left .list1 li{
+	height: 30px;
+	line-height: 30px;
+}
+.container3 .cont3-left #box2{
+	display: none;
+}
+.active{
+	color: red;
+	background: #ccc;
+}
+.container3 .cont3-left .list2 li{
+	height: 30px;
+	line-height: 30px;
+}
+.container3 .cont3-right{
+	width: 980px;
+	height: 2800px;
+	float: left;
+	position: relative;
+}
+.container3 .cont3-right h3{
+	font-size: 18px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	background: #ccc;
+	
+}
+.container3 .cont3-right .img{
+	float: left;
+}
+.container3 .cont3-right ul{
+	float: left;
+	text-align: center;
+}
+.container3 .cont3-right ul li{
+	float: left;
+	margin-right: 10px;
+	margin-top: 60px;
+}
+.container3 .cont3-right .comment .nav5{
+	position: absolute;
+	top: 2140px;
+	left: 0;
+}
+.container3 .cont3-right .comment .nav5 li{
+	float: left;
+	padding: 0 20px;
+	background: #ccc;
+	
+}
+.container3 .cont3-right .comment .nav5 li a{
+	font-size: 18px;
+	
+}
+.container3 .cont3-right .comment .list-group span{
+	float: left;
+	font-size: 16px;
+	margin-right: 15px;
+	color: red;
+}
+.container3 .cont3-right .comment .list-group .time{
+	float: right;
+	margin-right: 80px;
+	color: #ccc;
+}
+.container3 .cont3-right .comment .list-group p{
+	text-align: left;
+	height: 20px;
+	width: 1000px;
+	line-height: 20px;
+}
+.container3 .cont3-right .comment .list-group #mycomment{
+	font-size: 18px;
+	background: #ff0;
+}
+.container3 .cont3-right .comment .list-group .text input{
+	margin-top: 50px;
+	width: 850px;
+	height: 80px;
+	border: 1px solid #ccc;
+}

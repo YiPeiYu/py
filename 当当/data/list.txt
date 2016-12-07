@@ -1,0 +1,14 @@
+{
+	"totalCount": 55, "pageSize": 10, "data": [
+		{"id": 1, "src": "img/1.jpg", "title": "华为畅享6 全网通版 3G", "price": 1086},
+		{"id": 1, "src": "img/1.jpg", "title": "小米畅享5 全网通版 3G", "price": 1586},
+		{"id": 1, "src": "img/1.jpg", "title": "华为麦享6 全网通版 3G", "price": 1386},
+		{"id": 1, "src": "img/1.jpg", "title": "小米畅享6 全网通版 3G", "price": 1786},
+		{"id": 1, "src": "img/1.jpg", "title": "苹果iPhone6S 全网通版 3G", "price": 4086},
+		{"id": 1, "src": "img/1.jpg", "title": "华为P9 全网通版 3G", "price": 3486},
+		{"id": 1, "src": "img/1.jpg", "title": "华为荣耀6 全网通版 3G", "price": 2086},
+		{"id": 1, "src": "img/1.jpg", "title": "华为G9 全网通版 3G", "price": 4086},
+		{"id": 1, "src": "img/1.jpg", "title": "苹果iPhone畅享6 全网通版 3G", "price": 2086},
+		{"id": 1, "src": "img/1.jpg", "title": "红米畅享6 全网通版 3G", "price": 3126}
+	]
+}

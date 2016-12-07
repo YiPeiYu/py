@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/listpage.css" />
+		<script type="text/javascript" src="js/base.js" ></script>
+		<script type="text/javascript" src="js/listpage.js" ></script>
+		<script type="text/javascript" src="libs/jquery/jquery-2.1.1.min.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.header').load('head.html?_='+Math.random());
+				$('.footer').load('footer.html?_='+Math.random());
+			})
+		</script>
+	</head>
+	<body>
+		<div class="header"></div>
+		<div class="content">
+			<div class="list-group">
+				<dl>
+					<dt><a href="#"><img src="img/1.jpg" /></a></dt>
+					<dd><li><span>华为畅享6 全网通版 3G</span><br /><span>￥1086</span><br /><span><button id="a1">-</button><input type="text" class="input" value="1" /><button id="a2">+</button></span><br /><a href="#">加入购物车</a></li></dd>
+				</dl>
+				<dl>
+					<dt><a href="#"><img src="img/2.jpg" /></a></dt>
+					<dd><li><span>小米畅享5 全网通版 3G</span><br /><span>￥1286</span><br /><span><button id="a1">-</button><input type="text" id="input" value="1" /><button id="a2">+</button></span><br /><a href="#">加入购物车</a></li></dd>
+				</dl>
+				<dl>
+					<dt><a href="#"><img src="img/3.jpg" /></a></dt>
+					<dd><li><span>华为麦享6 全网通版 3G</span><br /><span>￥1286</span><br /><span><button id="a1">-</button><input type="text" id="input" value="1" /><button id="a2">+</button></span><br /><a href="#">加入购物车</a></li></dd>
+				</dl>
+				<dl>
+					<dt><a href="#"><img src="img/4.jpg" /></a></dt>
+					<dd><li><span>小米畅享6 全网通版 3G</span><br /><span>￥1286</span><br /><span><button id="a1">-</button><input type="text" id="input" value="1" /><button id="a2">+</button></span><br /><a href="#">加入购物车</a></li></dd>
+				</dl>
+				<dl>
+					<dt><a href="#"><img src="img/5.jpg" /></a></dt>
+					<dd><li><span>苹果iPhone6S 全网通版 3G</span><br /><span>￥4286</span><br /><span><button id="a1">-</button><input type="text" id="input" value="1" /><button id="a2">+</button></span><br /><a href="#">加入购物车</a></li></dd>
+				</dl>
+				<dl>
+					<dt><a href="#"><img src="img/6.jpg" /></a></dt>
+					<dd><li><span>华为P9 全网通版 3G</span><br /><span>￥3086</span><br /><span><button id="a1">-</button><input type="text" id="input" value="1" /><button id="a2">+</button></span><br /><a href="#">加入购物车</a></li></dd>
+				</dl>
+				<dl>
+					<dt><a href="#"><img src="img/7.jpg" /></a></dt>
+					<dd><li><span>华为荣耀6 全网通版 3G</span><br /><span>￥2286</span><br /><span><button id="a1">-</button><input type="text" id="input" value="1" /><button id="a2">+</button></span><br /><a href="#">加入购物车</a></li></dd>
+				</dl>
+				<dl>
+					<dt><a href="#"><img src="img/8.jpg" /></a></dt>
+					<dd><li><span>华为G9 全网通版 3G</span><br /><span>￥1286</span><br /><span><button id="a1">-</button><input type="text" id="input" value="1" /><button id="a2">+</button></span><br /><a href="#">加入购物车</a></li></dd>
+				</dl>
+				<dl>
+					<dt><a href="#"><img src="img/9.jpg" /></a></dt>
+					<dd><li><span>苹果iPhone畅享6 全网通版 3G</span><br /><span>￥2586</span><br /><span><button id="a1">-</button><input type="text" id="input" value="1" /><button id="a2">+</button></span><br /><a href="#">加入购物车</a></li></dd>
+				</dl>
+				<dl>
+					<dt><a href="#"><img src="img/10.jpg" /></a></dt>
+					<dd><li><span>红米畅享6 全网通版 3G</span><br /><span>￥2486</span><br /><span><button id="a1">-</button><input type="text" id="input" value="1" /><button id="a2">+</button></span><br /><a href="#">加入购物车</a></li></dd>
+				</dl>
+				
+			</div>
+			<div class="car"><a href="shopcar.html">查看购物车</a></div>
+			<div id="pageing"></div>
+		</div>
+		<div class="footer"></div>
+		
+		
+	<script type="text/javascript">
+		$(function(){
+			var page = function(_pageindex, _isgenerate){
+				$.get('data/list.txt', {'_': Math.random(), page: _pageindex}, function(response){
+					var _data = JSON.parse(response);
+					console.log(_data);
+					var pageCount = _data.totalCount % _data.pageSize > 0 ? parseInt(_data.totalCount / _data.pageSize) + 1 :  parseInt(_data.totalCount / _data.pageSize)
+					var pageFlag = '';
+					if(!_isgenerate){
+						return false;
+					}
+					for(var i = 1; i <= pageCount; i++){
+						pageFlag += ('<span>' + i + '</span>');
+					}
+					$(pageFlag).appendTo('#pageing');
+				})
+			}
+			page(1, true);
+			$('#pageing').on('click', function(evt){
+				page($(evt.target).text());
+				
+			})
+
+		})
+	</script>
+	</body>
+</html>

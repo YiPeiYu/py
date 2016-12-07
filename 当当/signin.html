@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>登录 - 当当网</title>
+		<!--css framework -->
+		<link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+		<link href="libs/jquery-confirm/jquery-confirm.css" rel="stylesheet" />
+		<!-- auto css -->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/signin.css" />
+
+		<!--js plugin -->
+		<script src="libs/jquery/jquery-2.1.1.min.js"></script>
+		<script src="libs/jquery-confirm/jquery-confirm.js"></script>
+		<script src="libs/jquery-validation-1.15.0/jquery.validate.min.js"></script>
+		<script src="libs/jquery-validation-1.15.0/jquery.metadata.js"></script>
+		<script src="libs/jquery-validation-1.15.0/jquery.validate.extend.methods.js"></script>
+		<script src="libs/jquery-validation-1.15.0/messages_zh.js"></script>
+		<!-- auto js -->
+		<script type="text/javascript" src="js/base.js" ></script>
+		<script type="text/javascript" src="js/signin.js" ></script>
+
+	</head>
+
+	<body>
+		<div class="head">
+			<a href="#">
+				<img src="img/logo_login.png" />
+			</a>
+			<ul class="clearfix">
+				<li class="n1">
+					<a href="#">货到付款</a>
+				</li>
+				<li class="n2">
+					<a href="#">正品保障</a>
+				</li>
+				<li class="n3">
+					<a href="#">上门退款</a>
+				</li>
+			</ul>
+			<div class="warn">
+				<i class="fa fa-exclamation-circle"></i>为保障账户安全，请勿设置与邮箱及其他网站相同的账户登录密码或支付密码，
+				<a href="#">谨防诈骗</a>！
+			</div>
+		</div>
+		<div class="content">
+			<div class="left">
+				<a href="#"><img src="img/2016113016182396667.jpg" /></a>
+			</div>
+			<div class="login">
+				<h3>登录当当网</h3>
+				<form action="homepage.html">
+					<p><i class="fa fa-user"></i><input type="text" id="account" placeholder="邮箱/昵称/手机号码" name="account" /></p>
+					<p><i class="fa fa-lock"></i><input type="password" id="password" placeholder="密码" name="password" /></p><br />
+					<div class="a1"><input type="checkbox" />七天内自动登录<span><a href="#">忘记密码？</a></span></div>
+					<p class="log"><input type="submit" value="登录" /></p>
+					<p class="log2">还不是当前用户？<input type="button" value="立即注册" /></p>
+				</form>
+			</div>
+
+		</div>
+		<div class="footer">
+			<p>Copyright (C) 当当网 2004-2012, All Rights Reserved&nbsp;|&nbsp;
+				<a href="#">京ICP证041189号</a>
+				<a href="#">音像制品经营许可证 京音网8号</a>
+			</p>
+			<p class="foot">
+				<a href="#"><img src="img/validate.gif" /></a>
+				<a href="#"><img src="img/kx.jpg" /></a>
+			</p>
+		</div>
+
+		<!-- 防诈骗弹窗 开始 -->
+		<div class="masks" id="J_loginMask" style="display:inline-block;;">
+			<iframe class="masks_bg"></iframe>
+			<div class="pop_cheat">
+				<h3>安全提醒</h3>
+				<div class="pop_cheat_info clearfix">
+					<div id='component_2713728'></div>
+					<div>
+						<span class="right">当当平台及销售商<b>不会以任何理由，要求您点击任何网址链接进行退款或支付操作。</b>当当客服电话400-106-6666，0527-80878888。</span>
+					</div>
+				</div>
+				<div class="btn">
+					<a id="J_loginMaskClose" href="#">知道了</a>
+				</div>
+			</div>
+		</div>
+		<!-- 防诈骗弹窗 结束 -->
+	</body>
+
+</html>
+</body>
+
+</html>

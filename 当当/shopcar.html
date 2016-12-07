@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/shopcar.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<script type="text/javascript" src="js/base.js" ></script>
+		<script type="text/javascript" src="js/shopcar.js" ></script>
+		<script type="text/javascript" src="libs/jquery/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.footer-items').load('footer.html?_=' + Math.random());
+				$('.dangdang').mouseover(function(){
+					$('.tu').show().mouseover(function(){
+						$(this).show()
+					})
+				}).mouseout(function(){
+					$('.tu').hide().mouseout(function(){
+						$(this).hide()
+					})
+				})
+				$('.mydd').mouseover(function(){
+					$('.mydang').show().mouseover(function(){
+						$(this).show()
+					})
+				}).mouseout(function(){
+					$('.mydang').hide().mouseout(function(){
+						$(this).hide()
+					})
+				})
+			})
+		</script>
+	</head>
+
+	<body>
+		<div id="hd">
+			<div class="top">
+				<p>欢迎光临当当网，
+					<a href="#" class="user">188262****</a>
+					<a href="signin.html">退出</a>
+				</p>
+				<div class="nav">
+					<ul>
+						<li>
+							<a href="#">购物车</a>
+						</li>
+						<li>
+							<a href="#">我的订单</a>
+						</li>
+						<li>
+							<a href="#">原创征文</a>
+						</li>
+						<li class="dangdang">
+							<a href="#">手机当当</a>
+						</li>
+						<li class="mydd">
+							<a href="#">我的当当</a>
+						</li>
+						<li>
+							<a href="#">企业采购</a>
+						</li>
+						<li class="last">
+							<a href="#">客户服务</a>
+						</li>
+					</ul>
+				</div>
+				<div class="tu"><img src="img/tu.jpg" /></div>
+				<div class="mydang">
+					<ul>
+						<li class="hover">
+							<a href="#">我的收藏</a>
+						</li>
+						<li>
+							<a href="#">我的收藏</a>
+						</li>
+						<li>
+							<a href="#">我的收藏</a>
+						</li>
+						<li>
+							<a href="#">我的收藏</a>
+						</li>
+						<li>
+							<a href="#">我的收藏</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="logo"><a href="homepage.html"><img src="img/dd_logo.jpg" /></a></div>
+			<div class="nav">
+				<ul>
+					<li class="hover">我的购物车</li>
+					<li>填写订单</li>
+					<li>完成订单</li>
+				</ul>
+			</div>
+		</div>
+		<div class="address">
+			<p><span>配送地址：</span><em>广东省广州市天河区</em></p>
+		</div>
+		<div class="protect">
+			<ul class="list-item">
+				<li>商品信息</li>
+				<li>单价（元）</li>
+				<li>数量</li>
+				<li>金额（元）</li>
+				<li>操作</li>
+			</ul>
+			<table id="goods"></table>
+		</div>
+		<div class="footer-items"></div>
+	</body>
+
+</html>

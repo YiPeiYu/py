@@ -1,0 +1,94 @@
+.footer{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 12px;
+	height: 523px;
+	border-top: 2px solid #fa5000;
+	overflow: hidden;
+}
+.footer .foot_top{
+	height: 76px;
+	border-bottom: 1px solid #ccc;
+}
+.footer .foot_top ul{
+	margin-left: 170px;
+}
+.footer .foot_top ul li{
+	float: left;
+	padding-right: 45px;
+	
+}
+.footer .footer_center {
+    width: 1200px;
+    height: 170px;
+    margin: 0 auto;
+    padding-top: 30px;
+    margin-left: 100px;
+    border-bottom: 1px solid #ccc;
+}
+.footer .footer_center .footer_sort .f_title {
+    display: block;
+    padding-left: 10px;
+    font-size: 14px;
+    font-family: "microsoft yahei";
+    color: #323232;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+}
+.footer .footer_center .footer_sort {
+    width: 160px;
+    float: left;
+    text-align: center;
+}
+.footer .footer_center .footer_sort li{
+	height: 26px;
+	line-height: 26px;
+}
+.footer .footer_center .footer_sort li a{
+	color: #666;
+	cursor: pointer;
+}
+.footer .nav5{
+	width: 1200px;
+	overflow: hidden;
+}
+.footer .nav5 ul{
+	margin-left: 156px;
+	margin-top: 18px;
+}
+.footer .nav5 ul li{
+	float: left;
+	padding: 0 21px;
+	background: url(../img/nav-bg.gif) no-repeat right center;
+	cursor: pointer;
+}
+.footer_copyright {
+    padding: 40px 0 0 0;
+    margin: 0 auto;
+    float: none;
+    width: auto;
+    text-align: center;
+    color: #8c8c8c;
+}
+.footer_copyright2 {
+    padding: 10px 0 0 0;
+    margin: 0 auto;
+    float: none;
+    width: auto;
+    text-align: center;
+    color: #8c8c8c;
+}
+.footer_copyright2 span{
+	height: 24px;
+	display: inline-block;
+	line-height: 24px;
+}
+.footer p {
+	margin-top: 20px;
+	text-align: center;
+	color: #666;
+}
+.footer .foot a {
+	margin-right: 18px;
+}
